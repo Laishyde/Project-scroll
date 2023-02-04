@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+.section{
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+.image-container{
+    position: relative;
+    display: flex;
+  
+   
+
+}
+
+.image{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+   background-position: center;
+   background-repeat:no-repeat;
+   mix-blend-mode: multiply;
+   filter: blur(30px);
+   opacity: 0;
+    transition: filter 0.5s ease, opacity 0.5s ease;
+}
+.section.active .image{
+    opacity: 1;
+    filter: blur(0);
+}
+
